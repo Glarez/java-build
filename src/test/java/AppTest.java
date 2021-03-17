@@ -13,13 +13,14 @@ public class AppTest {
         String result = myApp.getStatus();
 
         assertEquals("OK", result);
+
     }
 
     @Test
     public void testAppTwo() {
         Application myApp = new Application();
 
-        boolean result = myApp.getCondition("true");
+        boolean result = myApp.getCondition(true);
 
         assertTrue(result);
     }
